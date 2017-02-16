@@ -1,0 +1,28 @@
+<div class="cointainer">
+<div class="row">
+<div class="col-md-8 col-md-offset-2">
+  <div class="bs-example" id="images">
+    <!--- point 1 -->
+    <div *ngFor="let message of messages | async">
+      <!-- point 2 -->
+      <div class="bubble" [class.you]="isYou(message.email)" [class.me]="isMe(message.email)">
+        <p>{{message.message}}</p>
+        <div class="author">
+          {{message.displayName}} | {{message.timestamp | date:"MM/ddyy hh:mm a"}}
+        
+    </div>
+
+</div>
+</div>
+  </div>
+
+
+  <figure class="highligth">
+
+    <!-- point 3 -->
+    <input type="textarea" class="message-text" [(ngModel)]="newMessage" (keyup.enter)="sendMessage()">
+    <a class="send-message" (click)="sendMessage()">send</a>
+  </figure>
+</div>
+</div>
+</div>
