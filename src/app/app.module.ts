@@ -12,7 +12,8 @@ import { HomePageComponent } from './home-page/home-page.component';
 
 
 export const firebaseConfig = {
-    apiKey: "AIzaSyDXit4uq0_kxvP0FrkgbC_r_SQ9rgkMG4k",
+    apiKey: Insert you api Key here
+    ",
     authDomain: "crud-v1-firebase-prog-blog.firebaseapp.com",
     databaseURL: "https://crud-v1-firebase-prog-blog.firebaseio.com",
     storageBucket: "crud-v1-firebase-prog-blog.appspot.com",
